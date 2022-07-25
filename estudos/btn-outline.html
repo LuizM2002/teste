@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>.btn-outline {
+    text-decoration: none;
+    font-size: 1em;
+    color:rgb(118, 109, 244);
+    padding: 10px 30px;
+    border: 2px solid rgb(118, 109, 244);
+    position: relative;
+    transition: .5s;
+}
+.btn-outline::before,
+.btn-outline::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: .5s;
+    text-align: center;
+}
+.btn-outline::before {
+    top: -10px;
+    left: -10px;
+    border-width: 2px 0 0 2px;
+    text-align: center;
+}
+.btn-outline::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 2px 2px 0;
+    text-align: center;
+}
+
+.btn-outline:hover::before,
+.btn-outline:hover::after {
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
+    font-size:xx-large;
+}
+
+
+</style>
+
+<a href="#" class="btn-outline">
+    
+</a>
+</head>
+<body>
+    
+</body>
+
+<p> Lear More</p>
+
+
+
+</html>
